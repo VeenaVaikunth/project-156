@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="​​​https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+            <script src = 'rotation.js'></script>
+            <script src = 'fish.js'></script>
+            <script src = 'treasure.js'></script>
+        </head>
+    
+        <body>
+            <a-scene id="scene">
+                <!--assets-->
+                <a-assets>
+                    <a-asset-item
+                        id = 'undersea'
+                        src = 'undersea.jpg'>
+                    </a-asset-item>
+                    <a-asset-item
+                        id = 'scubadiver'
+                        src = 'diver.jpg'>
+                    </a-asset-item>
+                </a-assets>
+    
+                <!--background-->
+                <a-entity
+                    id = 'sea'
+                    src = 'undersea.jpg'
+                    position = '0 0 0'
+                    scale = '0.3 0.3 0.3'>
+                </a-entity>
+    
+                <!--diver-->
+                <a-entity
+                    id = 'diver'
+                    src = 'diver.jpg'
+                    position = '0 0 0'
+                    diver-rotation>
+                </a-entity>
+    
+                <!--turtle-->
+                <a-entity
+                    id = 'turtle'
+                    src = 'turtle.jpg'
+                    position = '5 0 0'>
+                </a-entity>
+            </a-scene>
+            
+        </body>
+    </html>
